@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskflow Page</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="app">
+
+        <header class="navbar">
+
+            <div class="nav-left">
+
+                <div class="logo-box">
+                    ✅
+                </div>
+
+                <div>
+                    <h2>TaskFlow</h2>
+                    <p id="taskCounter">0 Tasks</p>
+                </div>
+                
+            </div>
+
+            <div class="nav-center">
+
+                <input type="text" id="searchInput" placeholder="Search tasks...">
+
+            </div>
+
+            <div class="nav-right">
+
+                <button id="themeToggle">🌙</button>
+
+                <img src="/leonce.png" alt="Profile" class="avatar">
+
+            </div>
+
+        </header>
+
+        <main class="dashboard">
+
+            <section class="top-panel">
+
+                <div class="welcome-card">
+
+                    <div class="welcome-text">
+
+                        <p class="small-title">
+                            PRODUCTIVITY DASHBOARD
+                        </p>
+                        
+                        <h1>
+                            Organize Your Daily Workflow
+                        </h1>
+
+                        <p class="welcome-desc">
+                            Track tasks,manage priorities,and stay productive with Taskflow.
+                        </p>
+                    </div>
+
+                    <div class="progress-circle">
+
+                        <div class="circle">
+
+                            <span id="progressNumber">
+                                0%
+                            </span>
+
+                        </div>
+
+                        <p>Completed</p>
+
+                    </div>
+
+                </div>
+
+                <div class="overview-grid">
+
+                    <div class="overview-card">
+
+                        <h3 id="totalTasks">
+                            0
+                        </h3>
+
+                        <p>Total Tasks</p>
+
+                    </div>
+
+                    <div class="overview-card">
+
+                        <h3 id="completedTasks">
+                            0
+                        </h3>
+
+                        <p>Completed</p>
+
+                    </div>
+
+                    <div class="overview-card">
+
+                        <h3 id="penidngTasks">
+                            0
+                        </h3>
+
+                        <p>Pending</p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="task-controls">
+
+                <div class="task-form">
+
+                    <input type="text" id="taskInput" placeholder="Enter a task...">
+
+                    <select  id="category">
+
+                        <option value="work">Work</option>
+                        <option value="study">Study</option>
+                        <option value="personal">Personal</option>
+
+                    </select>
+
+                    <select id="priority">
+
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+
+                    </select>
+
+                    <button id="addTask">  + Add Task  </button>
+
+                </div>
+
+            </section>
+
+            <section class="task-list">
+
+                <div id="taskContainer">
+                    
+                </div>
+            </section>
+
+            <section class="stats"></section>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
